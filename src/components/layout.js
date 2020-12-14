@@ -12,7 +12,6 @@ import React from "react"
 import "./layout.css"
 import Navbar from "./navbar"
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="dark:bg-gray-800 dark:text-gray-100">
+    <div className="bg-white dark:bg-gray-800 dark:text-gray-100">
       {/*<Header siteTitle={data.site.siteMetadata?.title || `Title`} />*/}
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
 

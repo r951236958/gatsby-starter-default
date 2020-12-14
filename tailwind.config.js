@@ -466,12 +466,23 @@ module.exports = {
         90: "0.9",
         95: "0.95",
       },
-      borderRadius: ["hover", "focus"],
-      borderWidth: ["hover", "focus"],
+      borderWidth: {
+        DEFAULT: "1px",
+        0: "0",
+        1: "1px",
+        2: "2px",
+        3: "3px",
+        4: "4px",
+        6: "6px",
+        8: "8px",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderRadius: ["hover", "focus"],
+      borderWidth: ["hover", "focus"],
+    },
   },
   plugins: [],
 }
