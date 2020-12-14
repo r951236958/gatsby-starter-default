@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,6 +44,12 @@ module.exports = {
         },
       },
     },
+    //{
+    //  resolve: `gatsby-plugin-typography`,
+    //  options: {
+    //    pathToConfigModule: `src/utils/typography`,
+    //  },
+    //},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
