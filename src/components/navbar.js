@@ -6,13 +6,13 @@ import "./navbar.module.css"
 function Navbar({ siteTitle }) {
   const [isExpanded, toggleExpansion] = React.useState(false)
   return (
-    <nav className="top-0 relative z-50 w-full flex items-center justify-between flex-wrap bg-gray-500 p-4">
+    <nav className="top-0 relative z-50 w-full flex items-center justify-between flex-wrap bg-darkcyan-500 p-4">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
         <span className="font-semibold text-sm tracking-tight">{ siteTitle }</span>
       </div>
       <div className="block lg:hidden">
-        <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+        <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-gray-200 border-darkcyan-400 hover:text-white hover:border-white">
           <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
@@ -32,7 +32,7 @@ function Navbar({ siteTitle }) {
         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item py-2 leading-none">
                 <a
-                  className="px-3 inline-flex items-center text-xs uppercase font-bold text-white hover:opacity-75"
+                  className="px-3 inline-flex items-center text-xs uppercase font-bold text-white hover:text-darkcyan-200 hover:opacity-75"
                   href="#pablo"
                 >
                   

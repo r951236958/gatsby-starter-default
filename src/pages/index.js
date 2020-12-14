@@ -3,6 +3,7 @@ import React from "react"
 import Image from "../components/image"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
+//import ResponsiveHeader from "../components/responsiveheader"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -52,7 +53,8 @@ const IndexPage = () => (
         <p className="text-gray-500">You have a new message!</p>
       </div>
     </div>
-    <div className="w-1/3 py-4">
+    
+    <div className="w-1/3 py-4 text-center">
       <Image />
     </div>
     <div className="h-full lg:flex items-baseline space-x-4 border border-darkcyan-600 rounded">
