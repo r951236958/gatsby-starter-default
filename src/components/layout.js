@@ -24,19 +24,26 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="bg-white dark:bg-gray-800 dark:text-gray-100">
+    <div
+      className="bg-white dark:bg-gray-800 dark:text-gray-100 bg-contain bg-center bg-fixed bg-no-repeat"
+      style={{
+        backgroundImage:
+          'url("https://github.com/r951236958/nextjs-tailwindcss/blob/main/public/assets/img/register_bg_2.png?raw=true")',
+      }}
+    >
       {/*<Header siteTitle={data.site.siteMetadata?.title || `Title`} />*/}
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
 
       <div
         style={{
+          padding: `0 1.0875rem 1.45rem`,
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer
+          className="bottom-0"
           style={{
             marginTop: `2rem`,
           }}

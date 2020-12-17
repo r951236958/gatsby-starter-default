@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import React from "react"
 //import Image from "../components/image"
 import MyImage from "../components/myImage"
+import BackgroundImage from "../components/BackgroundImage"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
 import "../utils/fontawesome"
@@ -68,6 +69,7 @@ const IndexPage = () => (
 
       <div>
         <MyImage />
+        <BackgroundImage />
       </div>
       <div>
         <div className="my-4 space-x-2">
@@ -79,7 +81,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div>
-        <div className="h-full lg:flex items-baseline space-x-4 border border-darkcyan-600 rounded">
+        <div className="h-full lg:flex items-baseline space-x-4 border border-darkCyan-600 rounded">
           <ul className="flex flex-col lg:flex-row list-none  lg:ml-auto">
             <li className="nav-item py-0 bg-darkcyan-600">
               <a
@@ -139,7 +141,7 @@ const IndexPage = () => (
         <div className="flex items-center space-x-4 my-4">
           <Link
             className="h-10 py-2 px-4 text-teal-400 border-2 border-teal-400 rounded-lg hover:text-teal-200 hover:bg-teal-100 hover:bg-opacity-10 hover:border-teal-500"
-            to="/page-3/"
+            to="/page3/"
           >
             Page3
           </Link>{" "}
