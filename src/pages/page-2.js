@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../utils/fontawesome"
+import SimpleCard from "../components/simpleCard"
 
 const SecondPage = () => (
   <Layout>
@@ -77,6 +78,7 @@ const SecondPage = () => (
       <Row>
         <Col className="border border-blue-400" xs={12} md={8}>
           xs=12 md=8
+          <SimpleCard />
         </Col>
         <Col xs={6} md={4}>
           xs=6 md=4

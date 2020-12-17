@@ -11,6 +11,7 @@ import React from "react"
 //import Header from "./header"
 import "./layout.css"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,17 +43,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          className="bottom-0"
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
       </div>
+      <Footer absolute />
     </div>
   )
 }

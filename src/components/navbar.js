@@ -3,10 +3,29 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./navbar.module.css"
 
+const navLinks = [
+  {
+    linkTitle: "Page 2",
+    href: "/page-2",
+  },
+  {
+    linkTitle: "Page 3",
+    href: "/page-3",
+  },
+  {
+    linkTitle: "Buttons",
+    href: "/buttons",
+  },
+  {
+    linkTitle: "Login",
+    href: "/login",
+  },
+]
+
 function Navbar({ siteTitle }) {
   const [isExpanded, toggleExpansion] = React.useState(false)
   return (
-    <nav className="top-0 relative z-50 w-full flex items-center justify-between flex-wrap bg-steelBlue-400 p-3">
+    <nav className="top-0 relative z-50 w-full flex items-center justify-between flex-wrap bg-blueGray-600 p-3">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <svg
           className="fill-current h-8 w-8 mr-2"
@@ -42,32 +61,23 @@ function Navbar({ siteTitle }) {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
-          <Link
-            to={`/page-2`}
-            href="#responsive-header"
-            className="block my-2 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-          >
-            Page 2
-          </Link>
-          <Link
-            to={`/page-3`}
-            className="block my-2 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
-          >
-            Page 3
-          </Link>
-          <Link
-            to={`/buttons`}
-            className="block my-2 lg:inline-block lg:mt-0 text-gray-200 hover:text-white"
-          >
-            Buttons
-          </Link>
+          {navLinks.map(({ href, linkTitle }) => (
+            <Link
+              key={linkTitle}
+              to={href}
+              href="#responsive-header"
+              className="block my-2 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+            >
+              {linkTitle}
+            </Link>
+          ))}
         </div>
 
         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li className="nav-item">
-            <a
+            <Link
               className="px-3 py-2 inline-flex items-center text-xs uppercase font-bold text-white hover:text-darkcyan-200 hover:opacity-75"
-              href="#pablo"
+              to="/landing"
             >
               <svg
                 className="w-4 h-4 fill-current text-white opacity-75"
@@ -77,12 +87,12 @@ function Navbar({ siteTitle }) {
               </svg>
 
               <span className="ml-2">Share</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
               className="px-3 py-2 inline-flex items-center text-xs uppercase font-bold text-white hover:opacity-75"
-              href="#pablo"
+              to="/colors"
             >
               <svg
                 className="w-4 h-4 fill-current text-white opacity-75"
@@ -92,7 +102,7 @@ function Navbar({ siteTitle }) {
               </svg>
 
               <span className="ml-2">Tweet</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a
