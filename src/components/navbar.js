@@ -107,7 +107,7 @@ function Navbar({ siteTitle }) {
           <li className="nav-item">
             <a
               className="px-3 py-2 inline-flex items-center text-xs uppercase font-bold text-white hover:opacity-75"
-              href="#pablo"
+              href="/heros"
             >
               <svg
                 className="w-4 h-4 fill-current text-white opacity-75"

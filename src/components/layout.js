@@ -35,12 +35,7 @@ const Layout = ({ children }) => {
       {/*<Header siteTitle={data.site.siteMetadata?.title || `Title`} />*/}
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-      <div
-        style={{
-          padding: `0 1.0875rem 1.45rem`,
-          margin: `0 auto`,
-          maxWidth: 960,
-        }}
+      <div className="container"
       >
         <main>{children}</main>
       </div>

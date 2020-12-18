@@ -5,7 +5,7 @@ import React from "react"
 import MyImage from "../components/myImage"
 import BackgroundImage from "../components/BackgroundImage"
 import Layout from "../components/layout"
-import Navbar from "../components/navbar"
+import LinkList from "../components/linklist"
 import "../utils/fontawesome"
 import { IconBtnOutline } from "../components/IconBtnOutline"
 //import ResponsiveHeader from "../components/responsiveheader"
@@ -15,7 +15,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="grid grid-cols-1 gap-10">
+    <div className="grid grid-cols-1 gap-10 ">
       <div>
         <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
         <p>
@@ -25,8 +25,8 @@ const IndexPage = () => (
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
       </div>
-      <div>
-        <Navbar />
+      <div className="mx-auto">
+        <LinkList />
       </div>
       <div>
         <div className="p-6 my-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
