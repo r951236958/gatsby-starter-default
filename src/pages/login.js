@@ -8,7 +8,7 @@ const Login = () => {
       <SEO title="Login" />
 
       <div className="flex content-center items-center justify-center h-full">
-        <div className="flex-wrap w-full lg:w-1/2 px-4 pt-32">
+        <div className="flex-wrap w-full lg:w-1/3 px-4 pt-32">
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
             <div className="rounded-t mb-0 px-6 py-6">
               <div className="text-center mb-3">

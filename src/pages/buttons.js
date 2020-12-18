@@ -154,6 +154,33 @@ const Buttons = () => (
             />
           </svg>
         </button>
+        <button className="inline-flex items-center justify-center w-10 h-10 mr-2 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-full focus:shadow-outline hover:bg-red-500">
+          <i className="material-icons w-4 h-4">keyboard_arrow_up</i>
+        </button>
+        <button
+          className="inline-flex items-center bg-red-500 text-white active:bg-red-600 p-2 rounded-full shadow hover:shadow-lg outline-none mr-1 mb-1"
+          type="button"
+          
+        >
+          <i className="material-icons">keyboard_arrow_up</i>
+        </button>
+
+        <button
+          className="inline-flex p-2 text-center text-white transition bg-red-500 rounded-full shadow ripple hover:shadow-lg hover:bg-red-600 focus:outline-none"
+          type="button"
+        >
+          <svg viewBox="0 0 24 24" className="fill-current h-5">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+          </svg>{" "}
+        </button>
+        <button
+          className="inline-flex p-2 text-center text-white transition bg-red-500 rounded-full shadow ripple hover:shadow-lg hover:bg-red-600 focus:outline-none"
+          type="button"
+        >
+          <i className="material-icons">keyboard_arrow_up</i>{" "}
+        </button>
+        
         <button className="inline-block p-3 text-center text-white transition border border-yellow-500 rounded-full ripple hover:bg-yellow-100 focus:outline-none">
           <svg
             className="w-5 h-5 text-yellow-500"

@@ -25,7 +25,7 @@ const navLinks = [
 function Navbar({ siteTitle }) {
   const [isExpanded, toggleExpansion] = React.useState(false)
   return (
-    <nav className="top-0 relative z-50 w-full flex items-center justify-between flex-wrap bg-blueGray-600 p-3">
+    <nav className="top-0 fixed z-50 w-full flex items-center justify-between flex-wrap bg-blueGray-600 p-3">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <svg
           className="fill-current h-8 w-8 mr-2"
@@ -65,8 +65,7 @@ function Navbar({ siteTitle }) {
             <Link
               key={linkTitle}
               to={href}
-              href="#responsive-header"
-              className="block my-2 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
+              className="block px-3 py-2 my-0 lg:inline-block text-gray-200 hover:text-white lg:mr-4 lg:my-2"
             >
               {linkTitle}
             </Link>

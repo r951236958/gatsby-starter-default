@@ -3,6 +3,9 @@ module.exports = {
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+				'-1/4': '-.25rem', //For A perfect position , you can change it to your desired width and height for your toogle
+			},
       colors: {
         black: "#000",
         white: "#fff",
@@ -530,7 +533,9 @@ module.exports = {
     extend: {
       borderRadius: ["hover", "focus"],
       borderWidth: ["hover", "focus"],
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-toggle')(),],
 }
